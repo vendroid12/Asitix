@@ -15,7 +15,23 @@ if(Arguments.length == 0){
 //vérifier si les données sont un tableau ou non avant le filtre
 if(data.length!=0){
 
-    //Filtrer le tableau de données
+    if( Arguments[0] == "--filter=ry"){
+        
+        FilterArray();
+
+    }else if(Arguments[0] == "--count"){
+
+        CountDataArray(data);
+      
+        console.log(JSON.stringify(data, undefined, 2));
+
+    }else{
+        console.log("Arguments non valides");
+    }
+  
+  
+  
+  //Filtrer le tableau de données
     //filter array of data
 
     const FilterArray = () =>{
@@ -85,21 +101,6 @@ if(data.length!=0){
         }, 0);
 
      }
-
-
-    if( Arguments[0] == "--filter=ry"){
-        
-        FilterArray();
-
-    }else if(Arguments[0] == "--count"){
-
-        CountDataArray(data);
-
-        console.log(JSON.stringify(data, undefined, 2));
-
-    }else{
-        console.log("Arguments non valides");
-    }
 
     
       
