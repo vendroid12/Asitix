@@ -1,5 +1,3 @@
-# Javascript developer test
-
 ## Filter
 
 Your job is to write a command-line interface in Node.js. 
