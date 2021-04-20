@@ -1,14 +1,6 @@
-## Filter
+## Filter data whose animals containing `ry` 
 
-Your job is to write a command-line interface in Node.js. 
-This program has to filter a list of elements containing a pattern.
-
-Details:
-- In the following file `data.js`, there are `Countries` containing `Peoples` containing `Animals`.
-- Only animals containing `ry` are displayed. The order should be kept intact.
-- Empty array after filtering are NOT returned.
-
-Sample of running the command, and its output:
+Expected output:
 
 ```shell script
 $ node app.js --filter=ry
@@ -42,11 +34,9 @@ $ node app.js --filter=ry
 ]
 ```
 
-## Count
+## Count  People and Animals and append their counted children
 
-The next goal is to print the counts of People and Animals by counting the number of children and appending it in the name, eg. `Satanwi [2]`.
-
-Sample of running the command, and its output:
+Expected output is:
 
 ```shell script
 node app.js --count
@@ -75,14 +65,10 @@ node app.js --count
 ]
 ```
 
-## Requirements
+## Functional Arguments
 
-- The code must be available in a GIT repository
-- No library/modules should be used, except for the testing library
+- node App.js --filter=ry
+- node App.js --count
 
-## Appreciation
 
-We will be really attentive to:
-
-- Code readability, structure and consistency
-- Tests, and how they are written
+Other arguments are invalids
